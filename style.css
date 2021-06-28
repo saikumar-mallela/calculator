@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+    box-sizing: border-box;
+    max-width: 320px;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 8px;
+    background-color: black;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.disp {
+    min-height: 80px;
+    padding: 2px 10px 2px 10px;
+    border: 2px #333 solid;
+    border-bottom: 0px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 6.5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #D6D5DA;
+    font-size: 32px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+  font-size: 26px;
+  color: #f32112;
+}
+
+
+.previous-operand, .current-operand{
+  min-height: 35px;
+}
+
+.btn{
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+      border: 2px solid;
+      border-radius: 100px;
+      background-color: #D6D5DA;
+      font-size: 20px;
+      outline: none;
+      cursor: pointer;
+    }
+    
+.btn:hover{
+    background-color: #F79111;
+}
+
+.eq{
+  background-color: #F79111;
+
+  grid-column: auto / span 2;
+  border-radius: 35px;
+  
+}
+
+.opp{
+  background-color: #F79111;
+}
+
+.opp:hover, .eq:hover{
+  background-color: #eccda7;
+}
+
+body{
+  background-color:rgb(191, 227, 240);
+}
